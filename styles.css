@@ -1,0 +1,497 @@
+/* Color Pallete:
+#fdfdfd
+#1e90ff
+#383838a
+#000000 */
+/* custom-font import (MonumentExtended-Regular) */
+
+@font-face {
+  font-family: monument;
+  src: url("fonts/MonumentExtended-Regular.otf");
+}
+
+/* custom-font import (MonumentExtended-Ultrabold) */
+@font-face {
+  font-family: monument-bold;
+  src: url("fonts/MonumentExtended-Ultrabold.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  color: #dfdcd8;
+}
+
+body {
+  background: rgb(19, 16, 17);
+  height: 100%;
+}
+
+.body-container {
+  position: relative;
+}
+
+/* Background Image */
+.bg-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(19, 16, 17)
+    ),
+    url("images/level-days.jpg");
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  filter: blur(5px);
+  opacity: 0.3;
+}
+
+.monstercat-logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 60px;
+  top: 20px;
+}
+
+/* Body Content */
+.main-content {
+  position: absolute;
+}
+
+img#logo-nav {
+  width: 50px;
+  height: 50px;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar */
+nav {
+  margin: 24px 0;
+  padding: 0 2% 0 44px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* hamburger icon */
+iconify-icon#hamburger {
+  font-size: 25px;
+  margin-right: 7px;
+}
+
+/* sidebar sticky social icon */
+.fa {
+  font-size: 18px;
+  padding: 3px;
+}
+
+.fa:hover {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.social .social-set {
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
+  position: absolute;
+  /* left: 95.2%; */
+  right: 2%;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* hero-content */
+.hero-container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+  margin-top: 7%;
+}
+
+.hero-container .left-box img {
+  width: 90%;
+  height: 90%;
+}
+
+.left-box h3 {
+  font-style: italic;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+span#song-instinct {
+  color: rgb(98, 156, 132);
+}
+
+.info-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+h1.title-song {
+  font-family: "monument", sans-serif;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0, 0);
+  color: #00000000;
+  -webkit-text-stroke: 1px white;
+  font-weight: 500;
+}
+
+h2.song-artist {
+  font-family: "monument", sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.left-box {
+  display: flex;
+  grid-gap: 5px;
+}
+
+.right-box {
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.artist-pic {
+  display: flex;
+  grid-gap: 30px;
+  margin: 50px 0;
+}
+
+.btn-play {
+  padding: 1rem 1.4rem;
+  margin-right: 10px;
+  font-family: "monument", sans-serif;
+  background-color: #50a584;
+  font-size: 14px;
+  border: 2px solid #50a584;
+  letter-spacing: 1px;
+}
+
+.btn-play:hover,
+.btn-share:hover {
+  background: #f6f6f6 !important;
+  color: black !important;
+  border: 2px solid #f6f6f6 !important;
+}
+
+.btn-play:hover i,
+.btn-share:hover i {
+  color: black !important;
+}
+
+.fa-play,
+.fa-share-nodes {
+  margin-right: 8px;
+}
+
+.btn-share {
+  padding: 1rem 1.1rem;
+  font-family: "monument", sans-serif;
+  background-color: #00000000;
+  font-size: 14px;
+  border: 2px solid #f1f1f1;
+  letter-spacing: 1px;
+}
+
+/* streaming platform deck */
+.stream-deck {
+  /* margin: 150px 300px 0 300px; */
+  width: 72%;
+  margin-top: 100px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 13%;
+}
+
+.stream-deck h1,
+.track-list h1,
+.other-release h1 {
+  font-family: "monument", sans-serif;
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.stream-icon {
+  display: table;
+  align-items: center;
+  margin: 3% 0;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.row {
+  display: table-row;
+  position: relative;
+}
+
+.deck-icon {
+  display: table-cell;
+  border: 2px solid #f1f1f1;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.deck-icon.player {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/*CUSTOM TITLE attribute*/
+/* .deck-icon[title]:hover::after{
+  content: attr(title);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background:#f1f1f1;
+  font-size: 12px;
+  padding: 5px 7px;
+  color:rgb(14,12,12);
+  position: absolute;
+} */
+/* Track list */
+h1.track-header {
+  margin-bottom: 50px;
+}
+
+.track-list {
+  width: 72%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 6%;
+}
+
+.music-tab {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.music-tab .music-tab-left {
+  display: flex;
+  grid-gap: 27px;
+  align-items: center;
+}
+
+.music-tab .music-tab-left .tab-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-tab-right {
+  display: flex;
+}
+
+.music-tab-right .tab-time {
+  margin-right: 50px;
+}
+
+.artist {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tab-icon a {
+  font-size: 23px;
+}
+
+/* other albums suggestion */
+.other-release {
+  width: 72%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.album-list {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.album-list .album-img {
+  width: 140px;
+  height: 140px;
+}
+
+.album-list h2 {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: "monument", sans-serif;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.album-list .artist {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  display: block;
+}
+
+.album-collection {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  width: 72%;
+}
+
+/* Company description */
+.company-description {
+  width: 72%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  grid-gap: 1%;
+  padding: 3% 0;
+  border-top: 2px solid #fdfdfd;
+  border-bottom: 2px solid #fdfdfd;
+  align-items: flex-start;
+}
+
+.leftmost ul,
+.middle ul,
+.rightmost ul {
+  font-size: 18px;
+  font-family: "monument", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.news {
+  opacity: 0.5;
+}
+
+.news-description {
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.email {
+  display: flex;
+}
+
+.email input {
+  width: 100%;
+  background-color: Transparent;
+  border-bottom: solid 1px #3e3b3c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.email button {
+  padding: 15px 20px;
+  background-color: Transparent;
+  border-bottom: solid 1px #3e3b3c;
+}
+
+.email button:hover {
+  background-color: red;
+}
+
+.email input:focus {
+  outline: 0;
+}
+
+.leftmost li,
+.middle li {
+  margin-bottom: 10px;
+}
+
+.company-description ul {
+  width: 300px;
+}
+
+/* Footer */
+.footer {
+  width: 72%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2%;
+  align-items: center;
+}
+
+.left-footer-box {
+  width: 50%;
+}
+
+.right-footer-box {
+  width: 50%;
+}
+
+.right-footer-box li {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.right-footer-box ul {
+  justify-content: flex-end;
+}
+
+.footer-text {
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+/* footer-text */
+.footer-acknowledgement {
+  width: 46%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  margin-top: 3%;
+}
+
+div.lower {
+  margin-top: 20px;
+}
