@@ -32,6 +32,10 @@ body {
   height: 100%;
 }
 
+a {
+  color: #dfdcd8;
+}
+
 .body-container {
   position: relative;
 }
@@ -193,18 +197,14 @@ h2.song-artist {
   font-size: 14px;
   border: 2px solid #50a584;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
-.btn-play:hover,
-.btn-share:hover {
-  background: #f6f6f6 !important;
-  color: black !important;
-  border: 2px solid #f6f6f6 !important;
-}
-
-.btn-play:hover i,
-.btn-share:hover i {
-  color: black !important;
+.btn-play:hover {
+  background-color: white;
+  color: rgb(19, 16, 17);
+  border: 2px solid #f6f6f6;
+  opacity: 1;
 }
 
 .fa-play,
@@ -215,10 +215,19 @@ h2.song-artist {
 .btn-share {
   padding: 1rem 1.1rem;
   font-family: "monument", sans-serif;
-  background-color: #00000000;
+  background: transparent;
   font-size: 14px;
   border: 2px solid #f1f1f1;
   letter-spacing: 1px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.btn-share:hover {
+  background: #f6f6f6;
+  color: rgb(19, 16, 17);
+  border: 2px solid #f6f6f6;
+  opacity: 1;
 }
 
 /* streaming platform deck */
@@ -268,17 +277,6 @@ h2.song-artist {
   font-weight: 800;
 }
 
-/*CUSTOM TITLE attribute*/
-/* .deck-icon[title]:hover::after{
-  content: attr(title);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  background:#f1f1f1;
-  font-size: 12px;
-  padding: 5px 7px;
-  color:rgb(14,12,12);
-  position: absolute;
-} */
 /* Track list */
 h1.track-header {
   margin-bottom: 50px;
