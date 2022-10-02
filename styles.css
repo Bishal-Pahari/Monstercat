@@ -231,6 +231,11 @@ h2.song-artist {
   opacity: 1;
 }
 
+.btn-share:hover i,
+.btn-play:hover i {
+  color: black !important;
+}
+
 /* streaming platform deck */
 .stream-deck {
   /* margin: 150px 300px 0 300px; */
