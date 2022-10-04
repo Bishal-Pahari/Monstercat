@@ -13,19 +13,22 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- <link
-      rel="stylesheet"
-      media="screen and (max-width: 767px)"
-      href="tablet.css"
-   -->
+    <!-- jquery cdnjs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <!-- tablet ONLY-->
-    <!-- <link
-      rel="stylesheet"
-      media="screen and (max-width: 480px)"
-      href="phone.css"
-    -->
-    <!-- phone ONLY-->
+    <!-- screen size responder(temporary) -->
+    <script>
+      if (window.innerWidth < 1024) {
+        window.location = "error404.html";
+      } else {
+        window.location = "index.html";
+      }
+    </script>
 
     <!-- typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +38,7 @@
       rel="stylesheet"
     />
 
-    <!-- font awsome -->
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -63,12 +66,166 @@
               /></a>
             </li>
             <li>
-              <a href="#">
+              <div class="menu-btn">
                 <iconify-icon
                   id="hamburger"
                   icon="clarity:bars-line"
                 ></iconify-icon>
-              </a>
+              </div>
+              <div class="side-bar">
+                <div class="sidebar-header">
+                  <div class="sidebar-logo">
+                    <img
+                      src="images\logo-extended.png"
+                      alt="MonsterCat extended logo"
+                    />
+                  </div>
+                  <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+                <div class="menu">
+                  <ul>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a class="sub-btn"
+                          >MUSIC<i
+                            class="fa-solid fa-chevron-right dropdown"
+                          ></i
+                        ></a>
+                        <div class="sub-menu">
+                          <a href="#" class="sub-item">OUR MUSIC</a>
+                          <a href="#" class="sub-item">INSTINCT</a>
+                          <a href="#" class="sub-item">UNCAGED</a>
+                          <a href="#" class="sub-item">SILK</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">ARTISTS</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a class="sub-btn"
+                          >ABOUT<i
+                            class="fa-solid fa-chevron-right dropdown"
+                          ></i
+                        ></a>
+                        <div class="sub-menu">
+                          <a href="#" class="sub-item">ABOUT MONSTERCAT</a>
+                          <a href="#" class="sub-item"
+                            >DIVERSTIY AND INCLUSION</a
+                          >
+                          <a href="#" class="sub-item">CODE OF ETHICS</a>
+                          <a href="#" class="sub-item">ENVIRONMENTAL</a>
+                          <a href="#" class="sub-item">CONTACT US</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">NEWS</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a class="sub-btn"
+                          >EVENTS<i
+                            class="fa-solid fa-chevron-right dropdown"
+                          ></i
+                        ></a>
+                        <div class="sub-menu">
+                          <a href="#" class="sub-item"
+                            >MONSTERCAT EVENTS EXPERIENCE</a
+                          >
+                          <a href="#" class="sub-item">UPCOMING EVENTS</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a class="sub-btn"
+                          >PROGRAMMING<i
+                            class="fa-solid fa-chevron-right dropdown"
+                          ></i
+                        ></a>
+                        <div class="sub-menu">
+                          <a href="#" class="sub-item">MonstercatTV</a>
+                          <a href="#" class="sub-item">CALL OF THE WILD</a>
+                          <a href="#" class="sub-item">SILK SHOWCASE</a>
+                          <a href="#" class="sub-item">UPCOMING SHOWS</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">GOLD</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">PARTNERS</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">PRESS</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">PLAYER</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">SHOP</a>
+                      </div>
+                    </li>
+                    <li class="listing-item">
+                      <div class="item">
+                        <a href="#">LOST CIVILIZATION</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sidebar-nav-icon">
+                  <div class="sidebar-nav-socials">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div class="sidebar-nav-socials">
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+                  <div class="sidebar-nav-socials">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <div class="sidebar-nav-socials">
+                    <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                  </div>
+                  <div class="sidebar-nav-socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                  <div class="sidebar-nav-socials">
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                  </div>
+                  <div class="sidebar-nav-socials">
+                    <a href="#"
+                      ><i class="fa-solid fa-headphones-simple"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="sidebar-nav-button">
+                  <a href=""
+                    ><button class="sign-btn sign-in-btn">SIGN IN</button></a
+                  >
+                  <button class="sign-btn sign-up-btn">
+                    <span>OR</span> <a href="#">SIGN UP</a>
+                  </button>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -95,7 +252,13 @@
               <a href="#"> <i class="fa fa-brands fa-discord"></i> </a>
             </li>
             <li class="social-icon">
-              <a href="#"> <i class="fa fa-solid fa-headphones"></i> </a>
+              <a href="#">
+                <img
+                  class="monstercat-player"
+                  src="images/monstercat-player.ico"
+                  alt=""
+                />
+              </a>
             </li>
           </ul>
         </div>
@@ -548,7 +711,11 @@
         <div class="footer">
           <div class="left-footer-box">
             <p class="footer-text">
-              2011 - 2022 © Monstercat, All Rights Reserved
+              2011 -
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              © Monstercat, All Rights Reserved
             </p>
           </div>
 
@@ -628,6 +795,9 @@
         </div>
       </div>
     </div>
+
+    <!-- external js -->
+    <script src="index.js"></script>
 
     <!-- Iconfiy cdn -->
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
