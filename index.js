@@ -1,3 +1,4 @@
+// Sidebar
 $(document).ready(function () {
   //jquery for toggle sub menus
   $(".sub-btn").click(function () {
@@ -9,10 +10,12 @@ $(document).ready(function () {
   $(".menu-btn").click(function () {
     $(".side-bar").addClass("active");
     $(".menu-btn").css("visibility", "hidden");
+    $(".social-set").css("visibility", "hidden");
   });
 
   $(".close-btn").click(function () {
     $(".side-bar").removeClass("active");
     $(".menu-btn").css("visibility", "visible");
+    $(".social-set").css("visibility", "visible");
   });
 });
