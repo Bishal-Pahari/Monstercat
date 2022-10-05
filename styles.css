@@ -262,12 +262,14 @@ h2.song-artist {
   align-items: center;
   margin: 3% 0;
   border-collapse: collapse;
-  position: relative;
+  /* position: relative; */
+  position: static;
 }
 
 .row {
   display: table-row;
-  position: relative;
+  position: static;
+  /* position: relative; */
 }
 
 .deck-icon {
