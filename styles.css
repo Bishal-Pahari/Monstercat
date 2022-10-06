@@ -379,6 +379,11 @@ h1.track-header {
   width: 72%;
 }
 
+/* MUSIC VIDEO TAB(Only mobile version) */
+.music-video {
+  display: none;
+}
+
 /* Company description */
 .company-description {
   width: 72%;
@@ -696,10 +701,6 @@ div.lower {
     right: 30%;
   }
 
-  .menu-btn {
-    top: 2vw;
-  }
-
   .hero-container {
     flex-direction: column;
     align-items: flex-start;
@@ -827,5 +828,255 @@ div.lower {
 
   .main-content {
     top: -1px;
+  }
+}
+
+/* Mobile Responsive design */
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: rgb(0, 0, 0);
+    height: 100%;
+  }
+
+  .bg-img {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0)
+    );
+  }
+
+  .main-content nav {
+    background: black;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding: 10px;
+  }
+
+  img#logo-nav {
+    width: 30px;
+    height: auto;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .menu-btn {
+    position: static;
+  }
+
+  .main-content {
+    top: -1px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 150px;
+    margin: 2.5rem 0 2rem;
+  }
+
+  .hero-container .left-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -8rem;
+  }
+
+  .left-box h3 {
+    transform: rotate(270deg);
+    font-size: 0.9rem;
+    writing-mode: horizontal-tb;
+    transform: none;
+    z-index: -1;
+    font-weight: 500;
+  }
+
+  .right-box {
+    margin: 0;
+    width: 100%;
+  }
+
+  h1.title-song {
+    -webkit-text-stroke: 0px;
+    color: #f6f6f6;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+
+  h2.song-artist {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .artist-pic {
+    display: none;
+  }
+
+  .button-play {
+    margin-top: 1.2rem;
+  }
+
+  .btn-play,
+  .btn-share {
+    padding: 1rem 0.8rem;
+  }
+
+  .stream-deck {
+    width: 90%;
+    margin-top: 4rem;
+  }
+
+  .stream-deck h1,
+  .track-list h1,
+  .other-release h1,
+  .music-header {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-family: "monument", sans-serif;
+    font-weight: 500;
+  }
+
+  .deck-icon,
+  .deck-icon.player {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .player span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+  }
+
+  .track-list {
+    width: 90%;
+    margin-top: 4rem;
+  }
+
+  h1.track-header {
+    margin-bottom: 1rem;
+  }
+
+  .music-tab .music-tab-left {
+    gap: 1.5rem;
+  }
+
+  .music-tab-right .tab-time,
+  .music-tab-right .share-icon {
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .other-release {
+    display: none;
+  }
+
+  .music-video {
+    display: block;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .music-header {
+    margin-bottom: 1rem;
+  }
+
+  .company-description {
+    width: 90%;
+    flex-direction: column;
+    font-weight: normal;
+    margin: 6rem auto 0;
+    padding: 4rem 0;
+  }
+
+  .company-description ul {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "monument", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .news-description {
+    margin-top: 10px;
+  }
+
+  .rightmost ul {
+    margin-top: 2.5rem;
+  }
+
+  .footer {
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 4rem;
+  }
+
+  .right-footer-box li {
+    margin: 0.4rem;
+  }
+
+  p.footer-text {
+    width: 200%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .right-footer-box ul {
+    justify-content: flex-start;
+  }
+
+  .footer-acknowledgement {
+    width: 90%;
+    font-size: 0.7rem;
+    margin-top: 3rem;
+  }
+
+  /* collapsible sidebar */
+  .side-bar {
+    width: 100%;
+    z-index: 0;
+  }
+
+  .side-bar .menu .item a {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+
+  .side-bar .menu {
+    height: 55%;
+    margin-left: 1.5rem;
+  }
+
+  .sidebar-nav-icon,
+  .sidebar-nav-button {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .sidebar-header {
+    padding: 0;
+  }
+
+  .side-bar .menu .item .sub-menu .sub-item {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+
+  .sign-btn {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
   }
 }
