@@ -262,12 +262,14 @@ h2.song-artist {
   align-items: center;
   margin: 3% 0;
   border-collapse: collapse;
-  position: relative;
+  /* position: relative; */
+  position: static;
 }
 
 .row {
   display: table-row;
-  position: relative;
+  position: static;
+  /* position: relative; */
 }
 
 .deck-icon {
@@ -675,4 +677,150 @@ div.lower {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* TABLET Rsponsive design */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-content nav {
+    background: rgb(4, 7, 7);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .social .social-set {
+    display: flex;
+    bottom: 95%;
+    right: 30%;
+  }
+
+  .menu-btn {
+    top: 2vw;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90vw;
+    margin-top: 15%;
+  }
+
+  .left-box {
+    width: 90vw;
+    height: auto;
+  }
+
+  .artist-pic {
+    display: none;
+  }
+
+  .hero-container .left-box img {
+    width: 100%;
+  }
+
+  h2.song-artist {
+    margin-top: 0;
+  }
+
+  .button-play {
+    margin-top: 25px;
+  }
+
+  .btn-play,
+  .btn-share {
+    padding: 1.3rem 3rem;
+    font-size: 20px;
+  }
+
+  img#logo-nav {
+    margin-left: 10px;
+  }
+
+  .stream-deck,
+  .track-list {
+    justify-content: flex-start;
+    width: 85vw;
+  }
+
+  .other-release {
+    width: 85vw;
+  }
+
+  .monstercat-player {
+    padding-top: 7px;
+  }
+
+  .album-list .album-img {
+    width: 10vw;
+    height: auto;
+    min-width: 11vw;
+  }
+
+  .company-description {
+    width: 85vw;
+  }
+
+  .company-description ul {
+    width: 25vw;
+    font-size: 2vw;
+  }
+
+  .news-description {
+    line-height: 20px;
+    font-size: 11px;
+  }
+
+  .footer-acknowledgement {
+    width: 80vw;
+  }
+
+  .footer {
+    width: 85vw;
+  }
+
+  .footer-text {
+    width: 300px;
+    font-size: 0.6rem;
+  }
+
+  .side-bar {
+    width: 50%;
+  }
+
+  .side-bar .menu .item a {
+    font-size: 25px;
+  }
+
+  .side-bar .menu .item .sub-menu a {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .sidebar-nav-icon {
+    font-size: 24px;
+  }
+
+  .sign-btn.sign-in-btn {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+  .sign-btn.sign-up-btn {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+
+  h1.title-song {
+    font-size: 2rem;
+  }
+
+  h2.song-artist {
+    font-size: 1.6rem;
+  }
+
+  .stream-deck h1,
+  .track-list h1,
+  .other-release h1 {
+    font-size: 35px;
+  }
 }
