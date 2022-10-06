@@ -148,6 +148,7 @@ iconify-icon#hamburger {
   font-family: "Montserrat", sans-serif;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 span#song-instinct {
@@ -822,5 +823,9 @@ div.lower {
   .track-list h1,
   .other-release h1 {
     font-size: 35px;
+  }
+
+  .main-content {
+    top: -1px;
   }
 }
