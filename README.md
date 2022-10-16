@@ -1,6 +1,8 @@
 # Monstercat
  Monstercat album-page - Clone made using html/css/Jquery⚡
 
+Responsive Layout
+
 Currently working on adding play button functionality.
 
 Deployed on github.
