@@ -22,6 +22,7 @@
   list-style: none;
   border: none;
   text-decoration: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   color: #dfdcd8;
@@ -42,6 +43,18 @@ a {
 
 /* Background Image */
 .bg-img {
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(19, 16, 17)),
+    url("images/level-days.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(19, 16, 17))
+    ),
+    url("images/level-days.jpg");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(19, 16, 17)),
+    url("images/level-days.jpg");
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
@@ -54,6 +67,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
+  -webkit-filter: blur(5px);
   filter: blur(5px);
   opacity: 0.3;
 }
@@ -90,8 +104,14 @@ nav {
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -129,9 +149,15 @@ iconify-icon#hamburger {
 
 /* hero-content */
 .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 80%;
   margin-top: 15%;
@@ -146,7 +172,11 @@ iconify-icon#hamburger {
   font-style: italic;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   z-index: -1;
 }
@@ -180,6 +210,8 @@ h2.song-artist {
 }
 
 .left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   grid-gap: 5px;
 }
@@ -190,6 +222,8 @@ h2.song-artist {
 }
 
 .artist-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   grid-gap: 30px;
   margin: 50px 0;
@@ -245,6 +279,8 @@ h2.song-artist {
   width: 72%;
   margin-top: 100px;
   margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 13%;
 }
@@ -260,6 +296,8 @@ h2.song-artist {
 
 .stream-icon {
   display: table;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 3% 0;
   border-collapse: collapse;
@@ -295,13 +333,19 @@ h1.track-header {
 
 .track-list {
   width: 72%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: auto;
   margin-top: 6%;
 }
 
 .music-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 30px;
   font-family: "Montserrat", sans-serif;
@@ -310,17 +354,28 @@ h1.track-header {
 }
 
 .music-tab .music-tab-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   grid-gap: 27px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .music-tab .music-tab-left .tab-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .music-tab-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -341,6 +396,8 @@ h1.track-header {
 .other-release {
   width: 72%;
   margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 7%;
 }
@@ -373,8 +430,12 @@ h1.track-header {
 }
 
 .album-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: 500;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 72%;
 }
@@ -387,14 +448,20 @@ h1.track-header {
 /* Company description */
 .company-description {
   width: 72%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: auto;
   margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   grid-gap: 1%;
   padding: 3% 0;
   border-top: 2px solid #fdfdfd;
   border-bottom: 2px solid #fdfdfd;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -405,8 +472,15 @@ h1.track-header {
   font-family: "monument", sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -424,6 +498,8 @@ h1.track-header {
 }
 
 .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -463,10 +539,16 @@ h1.track-header {
 /* Footer */
 .footer {
   width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: auto;
   margin-top: 2%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -484,6 +566,8 @@ h1.track-header {
 }
 
 .right-footer-box ul {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -514,10 +598,16 @@ div.lower {
 /* collapse sidebar */
 .sidebar-header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 4%;
   padding: 3% 4% 0 7%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -530,7 +620,11 @@ div.lower {
   right: -100%;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-transition-property: right;
+  -o-transition-property: right;
   transition-property: right;
 }
 
@@ -551,8 +645,15 @@ div.lower {
 }
 
 .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -570,6 +671,8 @@ div.lower {
 
 .side-bar .menu .item a .dropdown {
   margin: 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
@@ -594,6 +697,8 @@ div.lower {
 }
 
 .rotate {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -619,6 +724,8 @@ div.lower {
 .sidebar-nav-icon {
   width: 100%;
   margin-left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   grid-gap: 1rem;
   margin-top: 4rem;
@@ -626,7 +733,11 @@ div.lower {
 }
 
 .sidebar-nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: 15%;
   margin-top: 1rem;
@@ -696,13 +807,20 @@ div.lower {
   }
 
   .social .social-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     bottom: 95%;
     right: 30%;
   }
 
   .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     width: 90vw;
     margin-top: 15%;
@@ -741,6 +859,8 @@ div.lower {
 
   .stream-deck,
   .track-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     width: 85vw;
   }
@@ -840,6 +960,15 @@ div.lower {
   }
 
   .bg-img {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0))
+    );
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0));
     background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
@@ -851,6 +980,8 @@ div.lower {
     background: black;
     margin: 0;
     padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 10px;
   }
@@ -873,14 +1004,26 @@ div.lower {
   }
 
   .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 90%;
   }
 
   .left-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 150px;
     margin: 2.5rem 0 2rem;
@@ -893,9 +1036,15 @@ div.lower {
   }
 
   .left-box h3 {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
     transform: rotate(270deg);
     font-size: 0.9rem;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
+    -webkit-transform: none;
+    -ms-transform: none;
     transform: none;
     z-index: -1;
     font-weight: 500;
@@ -984,6 +1133,8 @@ div.lower {
   .music-video {
     display: block;
     width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: auto;
     margin-top: 4rem;
@@ -995,6 +1146,9 @@ div.lower {
 
   .company-description {
     width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-weight: normal;
     margin: 6rem auto 0;
@@ -1018,7 +1172,12 @@ div.lower {
 
   .footer {
     width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: start;
     margin-top: 4rem;
   }
@@ -1035,6 +1194,8 @@ div.lower {
   }
 
   .right-footer-box ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
